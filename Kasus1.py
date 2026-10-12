@@ -1,12 +1,11 @@
-nota_lengkap = True
-lpj_disetujui = True
-kuitansi_sah = True
+nilai_teori = True
+nilai_praktik = True
 
 #Model Logika
-pencairan = nota_lengkap and lpj_disetujui and kuitansi_sah
+lulus = nilai_teori and nilai_praktik 
 
 #Output hasil administrasi
-if pencairan:
-    print("pencairan anggaran SIAP DIPROSES")
+if lulus:
+	print("Siswa lulus:", lulus)
 else:
-    print("pencairan anggaran DITOLAK")
+	print("Siswa Tidak lulus")
