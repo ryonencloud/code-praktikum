@@ -1,12 +1,11 @@
-masa_kerja_cukup = True
-skp_baik = True
-ijazah_terverifikasi = True
+ipk = False
+aktif_organisasi = False
 
 #Model Logika
-kenaikan_pangkat = masa_kerja_cukup and skp_baik and ijazah_terverifikasi
+dapat_beasiswa = ipk and aktif_organisasi
 
 #Output hasil administrasi
-if kenaikan_pangkat:
-    print("pegawai MEMENUHI SYARAT kenaikan pangkat")
+if dapat_beasiswa:
+	print("Mendapat beasiswa:", dapat_beasiswa)
 else:
-    print("pegawai TIDAK MEMENUHI SYARAT kenaikan pangkat")
+	print("Tidak Medapat beasiswa:", dapat_beasiswa)
