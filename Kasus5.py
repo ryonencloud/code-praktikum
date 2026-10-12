@@ -1,12 +1,11 @@
-surat_rujukan = False
-kondisi_darurat = True
-resep_dokter = False
+kartu_anggota = False
+kartu_izin = True
 
 #Model Logika
-klaim_diterima = surat_rujukan or kondisi_darurat or resep_dokter
+boleh_masuk = kartu_anggota or kartu_izin
 
 #Output hasil administrasi
-if klaim_diterima:
-    print("klaim asuransi DITERIMA")
+if boleh_masuk:
+	print("Boleh masuk:", boleh_masuk)
 else:
-    print("klaim asuransi DITOLAK")
+	print("Tidak Boleh masuk:", boleh_masuk)
