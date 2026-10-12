@@ -1,11 +1,11 @@
-serah_hardcopy = True
-serah_softcopy = False
+bayar_tunai = True
+bayar_transfer = False
 
 #Model Logika
-penyerahan_valid = serah_hardcopy ^ serah_softcopy
+transaksi_valid = bayar_tunai ^ bayar_transfer
 
 #Output hasil administrasi
-if penyerahan_valid:
-    print("penyerahan dokumen VALID (pilih tepat satu metode)")
+if transaksi_valid:
+	print("Transaksi valid:", transaksi_valid)
 else:
-    print("penyerahan dokumen INVALID (pilih salah satu, tidak boleh keduanya/kosong)")
+	print("Transaksi Tidak valid:", transaksi_valid)
