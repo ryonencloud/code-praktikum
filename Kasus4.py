@@ -1,12 +1,11 @@
-kartu_keluarga = False
-surat_pindah = True
-ktp_lama = False
+punya_member = True
+punya_kupon = False
 
 #Model Logika
-identitas_valid = kartu_keluarga or surat_pindah or ktp_lama
+dapat_diskon = punya_member or punya_kupon
 
 #Output hasil administrasi
-if identitas_valid:
-    print("verifikasi identitas BERHASIL")
+if dapat_diskon:
+	print("Mendapat diskon:", dapat_diskon)
 else:
-    print("verifikasi identitas GAGAL")
+	print("Tidak Mendapat diskon:", dapat_diskon)
