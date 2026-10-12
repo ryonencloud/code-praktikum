@@ -1,12 +1,11 @@
-kartu_pkh = False
-surat_sktm = False
-kip_kuliah = True
+kehadiran_memenuhi = False
+izin_dosen = False
 
 #Model Logika
-bantuan_layak = kartu_pkh or surat_sktm or kip_kuliah
+boleh_ujian = kehadiran_memenuhi or izin_dosen
 
 #Output hasil administrasi
-if bantuan_layak:
-    print("pendaftar LAYAK menerima bantuan")
+if boleh_ujian:
+	print("Boleh mengikuti ujian:", boleh_ujian)
 else:
-    print("pendaftar TIDAK LAYAK menerima bantuan")
+	print("Tidak Boleh mengikuti ujian:", boleh_ujian)
