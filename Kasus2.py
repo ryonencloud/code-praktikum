@@ -1,12 +1,11 @@
-surat_pengantar = True
-proposal_disetujui = True
-bebas_tanggungan = True
+username_benar = True
+password_benar = False
 
 #Model Logika
-izin_terbit = surat_pengantar and proposal_disetujui and bebas_tanggungan
+login_berhasil = username_benar and password_benar
 
 #Output hasil administrasi
-if izin_terbit:
-    print("surat izin penelitian DAPAT DITERBITKAN")
+if login_berhasil:
+	print("Login berhasil:", login_berhasil)
 else:
-    print("surat izin penelitian BELUM DAPAT DITERBITKAN")
+	print("Gagal login:", login_berhasil)
