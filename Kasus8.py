@@ -1,11 +1,11 @@
-bayar_tunai = False
-bayar_transfer = True
+jalur_utama = True
+jalur_cadangan = True
 
 #Model Logika
-pembayaran_valid = bayar_tunai ^ bayar_transfer
+akses_valid = jalur_utama ^ jalur_cadangan
 
 #Output hasil administrasi
-if pembayaran_valid:
-    print("metode pembayaran retribusi DITERIMA")
+if akses_valid:
+	print("Akses valid:", akses_valid)
 else:
-    print("metode pembayaran INVALID (terjadi ganda atau belum memilih)")
+	print("Akses Tidak valid:", akses_valid)
